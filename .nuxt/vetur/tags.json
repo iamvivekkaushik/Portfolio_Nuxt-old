@@ -1,8 +1,14 @@
 {
-  "Logo": {
-    "description": "Auto imported from components/Logo.vue"
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
   },
-  "LazyLogo": {
-    "description": "Auto imported from components/Logo.vue"
+  "LazyFooter": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "TopNavbar": {
+    "description": "Auto imported from components/TopNavbar.vue"
+  },
+  "LazyTopNavbar": {
+    "description": "Auto imported from components/TopNavbar.vue"
   }
 }
