@@ -1,4 +1,16 @@
 export default {
+  /*
+    ** Nuxt rendering mode
+    ** See https://nuxtjs.org/api/configuration-mode
+    */
+   mode: 'universal',
+   
+   /*
+   ** Nuxt target
+   ** See https://nuxtjs.org/api/configuration-target
+   */
+   target: 'static',
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'portfolio_nuxt',
@@ -10,8 +22,12 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
+  /*
+    ** Global CSS - https://nuxtjs.org/guides/features/configuration#pre-processors
+  */
+   css: [
+    '~/assets/css/main.css',
+  ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
@@ -20,17 +36,12 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: [
-    // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
-  ],
+  buildModules: [],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
+    '@nuxtjs/axios'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
