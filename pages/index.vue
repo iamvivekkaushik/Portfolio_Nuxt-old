@@ -201,7 +201,7 @@
       </div>
 
       <div>
-        <div v-for="(project, index) in projects" class="flex-container">
+        <div v-for="(project, index) in projects" :key="index" class="flex-container">
           <div class="project-screenshot">
             <!--  Container for the project icon  -->
             <img :src="project.image">
@@ -212,7 +212,7 @@
             <p class="color-rock-blue">{{ project.desc }}</p>
             <div style="margin-top: 60px">
               <a :href="project.demo" target="_blank"><button class="button-pink">Demo</button></a>
-              <a :href="project.source" target="_blank" v-bind:class={'hide':false}>
+              <a :href="project.source" target="_blank" v-bind:class="{'hide':false}">
                 <button class="button-outline">Source</button>
               </a>
             </div>
